@@ -14,9 +14,11 @@
   <script type="text/javascript" src="Haptics.js"></script>
   <script>
   	function vibrate(){
-  		while(true){
+  		var i = 0;
+  		while(i>100){
   			Haptics.vibrate(200);
   			document.getElementById('work').innerHTML = 100;
+  			i=i+1;
   		}
   	}
   </script>
