@@ -9,10 +9,13 @@
   	<h1>hopefully vibrate</h1>
   	<br>
   	<input type="button" href="#" onclick="vibrate()">
+  	<span id="work">???</span>
   </body>
-  <script type="text/javascript">
+  <script type="text/javascript" src="Haptics.js"></script>
+  <script>
   	function vibrate(){
   		Haptics.vibrate(200);
+  		document.getElementById('work').innerHTML = 100;
   	}
-  </script>>
+  </script>
 </html>
